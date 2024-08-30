@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.create{
+    color: white;
+    background-color: darkcyan;
+    padding: 16px;
+    font-size: 20px;
+    border:none ;
+    border-radius: 6px;
+
+}
+.generator{
+    display: flex;
+    gap: 20px;
+}
+
+.create:hover{
+    scale: 1.3;
+}
+
+.num{
+    background-color: darkcyan;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+}

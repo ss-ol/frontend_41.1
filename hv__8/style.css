@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141618;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.container {
+    background-color: #2c2e35;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+.form {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form .emailBox,.passBox {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: springgreen;
+    padding-bottom: 20px;
+}
+
+.form input {
+    border: 2px solid springgreen;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+label.valid .emailText,
+label.valid .passText {
+    color: green;
+}
+label.invalid .emailText,
+label.invalid .passText{
+    color: red;
+}
+label.valid::before,
+label.invalid::before{
+    content:"";
+    position:absolute;
+    width: 24px;
+    height: 24px;
+    top: 18px;
+    right: 5px;
+    z-index: 100;
+}
+label.valid::before{
+    background-image: url("images/welcome.jpg");
+}
+label.invalid::before{
+    background-image: url("images/access denied.jpg");
+}
